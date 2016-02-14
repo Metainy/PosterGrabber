@@ -1,0 +1,53 @@
+@font-face {
+    src: url("/fonts/Roboto-Medium.ttf");
+}
+
+.root {
+    -accentColor: #00BCD4;
+    -fx-base: #424242;
+    -fx-background: #424242;
+    -fx-control-inner-background: #424242;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-family: "Roboto";
+    -fx-font-size: 10pt;
+}
+
+/*
+********************** Header **********************
+*/
+.myDialog .header-panel {
+    -fx-background-color: #2F3439;
+    -fx-font-size: 11pt;
+}
+
+/*
+********************** Content **********************
+*/
+.myDialog > *.label.content {
+    -fx-font-style: italic;
+    -fx-padding: 25 15 30 15;
+    -fx-pref-width: 380;
+    -fx-text-alignment: center;
+}
+
+/*
+********************** Footer **********************
+*/
+.myDialog > *.button-bar > *.container {
+    -fx-padding: 0 20 25 20;
+}
+
+.myDialog > *.button-bar > *.container .button {
+    -fx-border-style: null;
+    -fx-background-radius: 2, 2;
+    -fx-background-color: -accentColor;
+    -fx-text-fill: #FFFFFF;
+}
+
+.myDialog > *.button-bar > *.container .button:hover {
+    -fx-background-color: derive(-accentColor, 25%);
+}
+
+.myDialog > *.button-bar > *.container * {
+    -fx-max-width: 0px;
+}

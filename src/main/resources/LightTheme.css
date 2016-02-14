@@ -1,0 +1,198 @@
+@font-face {
+    src: url("/fonts/Roboto-Medium.ttf");
+}
+
+/*
+ Application Main Theme
+ */
+.root {
+    -accentColor: #00BCD4;
+    -fx-base: #424242;
+    -fx-background: #424242;
+    -fx-control-inner-background: #424242;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-family: "Roboto";
+    -fx-font-size: 10pt;
+}
+
+/*
+********************** MenuBar **********************
+*/
+.menu-bar {
+    -fx-background-color: #000000;
+}
+
+.menu-bar .label {
+    -fx-font-size: 10pt;
+}
+
+.menu-bar .context-menu .label {
+    -fx-font-size: 9pt;
+}
+
+.menu-button:showing {
+    -fx-background-color: -accentColor;
+}
+
+.menu-button:hover {
+    -fx-background-color: -accentColor;
+}
+
+.menu-item:focused {
+    -fx-background-color: -accentColor;
+}
+
+.check-menu-item > .left-container > .check {
+    -fx-background-color: white;
+}
+
+.menu-bar .separator .line {
+    -fx-border-color: transparent transparent derive(#d0d0d0, -60%) transparent;
+}
+
+/*
+********************** Context Menu **********************
+*/
+.context-menu {
+    -fx-background-color: #424242;
+}
+
+.context-menu .label {
+    -fx-font-size: 9pt;
+}
+
+/*
+********************** Toolbar **********************
+*/
+.tool-bar {
+    -fx-background-color: #2F3439;
+}
+
+.tool-bar .text-field {
+    -fx-prompt-text-fill: #757575;
+}
+
+.tool-bar .text-field:focused {
+    -fx-prompt-text-fill: transparent;
+}
+
+.rightToolBar {
+    -fx-alignment: center;
+}
+
+/*
+********************** Button **********************
+*/
+.button {
+    -fx-border-style: null;
+    -fx-background-radius: 2, 2;
+    -fx-background-color: -accentColor;
+    -fx-text-fill: #FFFFFF;
+}
+
+.button:hover {
+    -fx-background-color: derive(-accentColor, 25%);
+}
+
+.leftButton {
+    -fx-padding: 0;
+}
+
+/*
+********************** ComboBox **********************
+*/
+.combo-box {
+    -fx-border-style: null;
+    -fx-background-radius: 2, 2;
+    -fx-background-color: -accentColor;
+}
+
+.combo-box:hover {
+    -fx-background-color: derive(-accentColor, 25%);
+}
+
+.combo-box-popup .list-view .list-cell:filled:hover {
+    -fx-background-color: -accentColor;
+}
+
+.combo-box-popup .list-view .list-cell:filled:selected, .combo-box-popup .list-view .list-cell:filled:selected:hover {
+
+    -fx-background-color: -accentColor;
+}
+
+.combo-box .arrow {
+    -fx-background-color: white;
+}
+
+/*
+********************** SplitPane **********************
+*/
+.split-pane {
+    -fx-background-insets: 0.0;
+    -fx-padding: 0em;
+}
+
+.split-pane-divider {
+    -fx-cursor: default;
+}
+
+/*
+********************** TableView **********************
+*/
+.table-view {
+    -fx-background-insets: 0.0;
+    -fx-padding: 0em;
+}
+
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: -accentColor;
+}
+
+.custom-align {
+    -fx-alignment: center;
+}
+
+.table-row-cell {
+
+    -fx-padding: 0 0 0 3;
+}
+
+/*
+********************** AnchorPane **********************
+*/
+.right-anchor {
+    -fx-background-color: #FFFFFF;
+}
+
+.right-anchor > * > .label {
+    -fx-text-fill: #2F3439;
+}
+
+.helpText {
+    -fx-text-fill: #2F3439;
+}
+
+/*
+********************** Progress Indicator **********************
+*/
+.progress-indicator {
+    -fx-progress-color: -accentColor;
+}
+
+/*
+********************** Details Pane **********************
+*/
+.movieTitle {
+    -fx-font-size: 11pt;
+}
+
+/*
+********************** Footer **********************
+*/
+.footer {
+    -fx-background-color: #2F3439;
+}
+
+.footer .label {
+    -fx-font-size: 9pt;
+}
