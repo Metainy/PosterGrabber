@@ -5,7 +5,7 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.*?>
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" stylesheets="@LightTheme.css"
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" stylesheets="@DarkTheme.css"
             xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.Controller">
     <bottom>
         <VBox alignment="CENTER_LEFT" minHeight="-Infinity" minWidth="-Infinity" styleClass="footer">
