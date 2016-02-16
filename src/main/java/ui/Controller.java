@@ -206,6 +206,7 @@ public class Controller implements Initializable {
         fileChooser.setInitialDirectory(userDirectory);
 
         if (movie != null) {
+
             // Get movie's title and set an initial file name
             String movieTitle = movie.getMovieTitle();
 
@@ -243,17 +244,23 @@ public class Controller implements Initializable {
 
         if (movie != null) {
 
+            // Get movie's title and set an initial file name
+            String movieTitle = movie.getMovieTitle();
+
+            // Replace any invalid characters
+            movieTitle = movieTitle.replaceAll("[\"/?\"*><|]", "").replace(":", "-");
+
             // If preferences file is empty
             if (userDirectoryString.equals("empty")) {
 
                 userDirectoryString = System.getProperty("user.home");
             }
 
-            File userDirectory = new File(userDirectoryString + "/" + movie.getMovieTitle() + ".jpg");
+            File userDirectory = new File(userDirectoryString + "/" + movieTitle + ".jpg");
 
             // If it can't access User Home, default to C drive
             if (!userDirectory.getParentFile().canRead()) {
-                userDirectory = new File("D:\\" + movie.getMovieTitle() + ".jpg");
+                userDirectory = new File("D:\\" + movieTitle + ".jpg");
             }
 
             // Check file isn't null, so it the image view
